@@ -18,43 +18,141 @@
         <section class="privacy-content">
             <div class="container">
                 <h2>Gizlilik Politikası</h2>
-                <p><strong>Son Güncelleme:</strong> 02.06.2025</p>
+                <p><strong>Son güncelleme:</strong> 02.06.2025</p>
 
-                <h3>1. Genel Bilgiler</h3>
-                <p>Bu gizlilik politikası, "Benim Ülke" mobil uygulamasının kişisel verilerinizi nasıl topladığı, kullandığı ve koruduğu hakkında bilgi verir.</p>
+                <h3>1. Amaç</h3>
+                <p>Bu Gizlilik Politikası, Benim Ülke mobil uygulamasını ("Uygulama") kullanan kişilerin ("Kullanıcı") hangi kişisel verilerinin toplandığını, nasıl işlendiğini, kimlerle paylaşıldığını ve Kullanıcı haklarını açıklar. Uygulamayı kullanarak bu politikada belirtilen şartları kabul etmiş olursunuz.</p>
 
-                <h3>2. Toplanan Bilgiler</h3>
+                <h3>2. Topladığımız Veriler</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Veri kategorisi</th>
+                            <th>Örnekler</th>
+                            <th>Toplama yöntemi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kimlik Bilgileri</td>
+                            <td>Ad-soyad, kullanıcı adı</td>
+                            <td>Kayıt formu</td>
+                        </tr>
+                        <tr>
+                            <td>İletişim Bilgileri</td>
+                            <td>E-posta, telefon</td>
+                            <td>Kayıt / Profil düzenleme</td>
+                        </tr>
+                        <tr>
+                            <td>Konum Verisi</td>
+                            <td>İl-ilçe, GPS koordinatı (isteğe bağlı)</td>
+                            <td>Kullanıcı izni sonrası cihaz sensörleri</td>
+                        </tr>
+                        <tr>
+                            <td>İçerik</td>
+                            <td>Yüklenen videolar, başlık-etiket-yorumlar</td>
+                            <td>Uygulama içi yükleme</td>
+                        </tr>
+                        <tr>
+                            <td>Cihaz Bilgisi</td>
+                            <td>Cihaz modeli, OS sürümü, dil</td>
+                            <td>Otomatik (Firebase)</td>
+                        </tr>
+                        <tr>
+                            <td>Kullanım Verisi</td>
+                            <td>Uygulama içi gezinme, beğeni-oy verisi</td>
+                            <td>Otomatik (Firebase Analytics)</td>
+                        </tr>
+                        <tr>
+                            <td>Bildirim Belirteci</td>
+                            <td>FCM Token</td>
+                            <td>Otomatik (Firebase Cloud Messaging)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>3. Verilerin Kullanım Amaçları</h3>
                 <ul>
-                    <li><strong>Kullanım Verileri:</strong> Uygulamanın nasıl kullanıldığına dair anonim istatistikler</li>
-                    <li><strong>Cihaz Bilgileri:</strong> Cihaz türü, işletim sistemi sürümü (anonim)</li>
-                    <li><strong>Konum Bilgileri:</strong> Sadece izin verdiğiniz takdirde ve özellik kullanımı için</li>
+                    <li>Hesap oluşturma ve oturum yönetimi</li>
+                    <li>Kullanıcıların video yüklemesi, beğeni / olumsuz oy (upvote–downvote) işlemleri</li>
+                    <li>İçerik sıralama, keşfet ve istatistik fonksiyonları</li>
+                    <li>Push bildirimleriyle güncelleme iletmek</li>
+                    <li>Hata takibi ve performans ölçümü (Firebase Crashlytics & Analytics)</li>
+                    <li>Yasal yükümlülüklerin yerine getirilmesi ve ihlal bildirimi yönetimi</li>
                 </ul>
 
-                <h3>3. Bilgilerin Kullanımı</h3>
-                <p>Toplanan bilgiler şu amaçlarla kullanılır:</p>
+                <h3>4. Üçüncü Taraf Hizmetler</h3>
+                <p>Veriler, aşağıdaki hizmet sağlayıcılarla paylaşılabilir:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Hizmet</th>
+                            <th>Amaç</th>
+                            <th>Paylaşılan veri</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Firebase Authentication</td>
+                            <td>Kimlik doğrulama</td>
+                            <td>E-posta, şifre, UID</td>
+                        </tr>
+                        <tr>
+                            <td>Firebase Firestore & Storage</td>
+                            <td>Veri saklama, video barındırma</td>
+                            <td>Yüklenen içerik + meta veriler</td>
+                        </tr>
+                        <tr>
+                            <td>Firebase Cloud Messaging (FCM)</td>
+                            <td>Push bildirimleri</td>
+                            <td>Cihaz bildirimi anahtarı</td>
+                        </tr>
+                        <tr>
+                            <td>Firebase Crashlytics & Analytics</td>
+                            <td>Hata & kullanım analizi</td>
+                            <td>Cihaz + kullanım verisi</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Bu hizmetler veriyi ABD merkezli sunucularda işleyebilir ve Google'ın gizlilik politikalarına tabidir.</p>
+
+                <h3>5. Çerezler ve Benzeri Teknolojiler</h3>
+                <p>Uygulama kendi içinde çerez kullanmaz; ancak Firebase SDK'ları tanımlama bilgileri veya benzeri yerel depolama mekanizmaları kullanabilir.</p>
+
+                <h3>6. Veri Saklama Süresi</h3>
                 <ul>
-                    <li>Uygulama performansını iyileştirmek</li>
-                    <li>Kullanıcı deneyimini geliştirmek</li>
-                    <li>Teknik sorunları gidermek</li>
+                    <li>Hesap silindiğinde kimlik, iletişim ve içerik verileri 30 gün içinde kalıcı olarak silinir.</li>
+                    <li>Hata kayıtları en fazla 90 gün tutulur.</li>
+                    <li>Yasal yükümlülükler gerektiriyorsa daha uzun saklama yapılabilir.</li>
                 </ul>
 
-                <h3>4. Bilgi Paylaşımı</h3>
-                <p>Kişisel bilgileriniz üçüncü taraflarla paylaşılmaz, satılmaz veya kiralanmaz.</p>
+                <h3>7. Kullanıcı Hakları</h3>
+                <p>KVKK madde 11 ve GDPR madde 12-23 uyarınca:</p>
+                <ul>
+                    <li>Verilerinize erişme</li>
+                    <li>Düzeltme veya silme talep etme</li>
+                    <li>İşlemenin sınırlandırılmasını isteme</li>
+                    <li>Taşınabilirlik talebi</li>
+                    <li>İşlemeye itiraz etme haklarına sahipsiniz.</li>
+                </ul>
+                <p>Talepler için <strong>privacy@benimulke.com</strong> adresine başvurabilirsiniz.</p>
 
-                <h3>5. Veri Güvenliği</h3>
-                <p>Verilerinizi korumak için endüstri standardı güvenlik önlemleri alınmaktadır.</p>
+                <h3>8. Veri Güvenliği</h3>
+                <p>Kişisel veriler TLS şifrelemesiyle iletilir, sunucu tarafında erişim rol tabanlı olarak sınırlandırılır. Yetkisiz erişimi önlemek için düzenli olarak güvenlik taraması ve yedekleme yapılır.</p>
 
-                <h3>6. Çocukların Gizliliği</h3>
-                <p>Uygulamamız 13 yaş altı çocuklardan bilerek kişisel bilgi toplamaz.</p>
+                <h3>9. Çocukların Gizliliği</h3>
+                <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir. Bilerek böyle bir veriyi topladığımızı fark edersek derhâl sileriz.</p>
 
-                <h3>7. İletişim</h3>
-                <p>Gizlilik politikası hakkında sorularınız için: <strong>tfyilmaz@gmail.com</strong></p>
+                <h3>10. Politika Değişiklikleri</h3>
+                <p>Bu politika zaman zaman güncellenebilir. Değişiklikler yayınlandığı anda geçerlilik kazanır; önemli güncellemelerde push bildirimi veya e-posta yoluyla bilgilendirme yapılır.</p>
 
-                <h3>8. Değişiklikler</h3>
-                <p>Bu gizlilik politikası gerektiğinde güncellenebilir. Önemli değişiklikler uygulama üzerinden duyurulacaktır.</p>
+                <h3>11. İletişim</h3>
+                <p><strong>Veri sorumlusu:</strong> T. Fırat Yılmaz</p>
+                <p><strong>Adres:</strong> Güzeloluk Mh. 1880 Sk. İmge Sit. C Blok D:1 Muratpaşa Antalya</p>
+                <p><strong>E-posta:</strong> tfyilmaz@gmail.com</p>
 
                 <div class="last-update">
-                    <p><em>Bu doküman App Store ve Google Play Store gereksinimlerini karşılamak için hazırlanmıştır.</em></p>
+                    <p><em>Bu doküman KVKK ve GDPR gereksinimlerini karşılamak için hazırlanmıştır.</em></p>
                 </div>
             </div>
         </section>
@@ -62,7 +160,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Benim Ülke. Tüm hakları saklıdır.</p>
+            <p>&copy; 2025 Benim Ülke. Tüm hakları saklıdır.</p>
             <p><a href="index.html">Ana Sayfa</a></p>
         </div>
     </footer>
