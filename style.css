@@ -22,20 +22,20 @@ body {
 header {
     background: #ffffff;
     color: #2c3e50;
-    padding: 3rem 0;
+    padding: 4rem 0;
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
     color: #1a1a1a;
 }
 
 .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #666;
     font-weight: 400;
 }
@@ -57,26 +57,26 @@ main {
 
 .hero {
     background: #ffffff;
-    padding: 4rem 0;
+    padding: 6rem 0;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     color: #1a1a1a;
     font-weight: 600;
     line-height: 1.3;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
     color: #666;
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
@@ -85,25 +85,25 @@ main {
 /* İndirme Butonları */
 .download-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 16px 32px;
-    border-radius: 12px;
+    padding: 18px 36px;
+    border-radius: 14px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
 
 .btn-ios {
@@ -124,115 +124,6 @@ main {
 .btn-android:hover {
     background: #1a1a1a;
     color: white;
-}
-
-/* Özellikler Bölümü */
-.features {
-    padding: 5rem 0;
-    background: #fafafa;
-}
-
-.features h3 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    color: #1a1a1a;
-    font-weight: 600;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.feature {
-    background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 16px;
-    text-align: left;
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-    border-color: #e0e0e0;
-}
-
-.feature h4 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #1a1a1a;
-    font-weight: 600;
-    line-height: 1.4;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Nasıl Çalışır Bölümü */
-.how-it-works {
-    background: white;
-    padding: 5rem 0;
-}
-
-.how-it-works h3 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    color: #1a1a1a;
-    font-weight: 600;
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.step {
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background: #1a1a1a;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0 auto 1.5rem auto;
-}
-
-.step p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.cta {
-    text-align: center;
-    padding: 2rem 0;
-    border-top: 1px solid #f0f0f0;
-    margin-top: 2rem;
-}
-
-.cta p {
-    font-size: 1.3rem;
-    color: #1a1a1a;
-    font-weight: 500;
 }
 
 /* Gizlilik Politikası */
@@ -287,7 +178,8 @@ footer {
     background: #1a1a1a;
     color: #ccc;
     text-align: center;
-    padding: 3rem 0;
+    padding: 4rem 0;
+    margin-top: 4rem;
 }
 
 footer a {
@@ -302,40 +194,40 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+    header {
+        padding: 3rem 0;
+    }
+    
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    
+    .hero {
+        padding: 4rem 0;
     }
     
     .hero h2 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .hero p {
         font-size: 1.1rem;
+        margin-bottom: 3rem;
     }
     
     .download-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     
     .btn {
-        width: 250px;
+        width: 280px;
+        padding: 16px 32px;
+        font-size: 1rem;
     }
     
     .container {
         padding: 0 15px;
-    }
-    
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .steps {
-        grid-template-columns: 1fr;
-    }
-    
-    .features, .how-it-works {
-        padding: 3rem 0;
     }
 } 
