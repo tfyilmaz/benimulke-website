@@ -101,7 +101,10 @@ main {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 18px 36px;
     border-radius: 14px;
     text-decoration: none;
@@ -109,6 +112,7 @@ main {
     font-size: 1.1rem;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    min-width: 220px;
 }
 
 .btn:hover {
@@ -119,10 +123,12 @@ main {
 .btn-ios {
     background: #1a1a1a;
     color: white;
+    border: 2px solid #1a1a1a;
 }
 
 .btn-ios:hover {
-    background: #333;
+    background: white;
+    color: #1a1a1a;
 }
 
 .btn-android {
@@ -134,6 +140,13 @@ main {
 .btn-android:hover {
     background: #1a1a1a;
     color: white;
+}
+
+/* Logo stilleri */
+.btn-logo {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
 }
 
 /* Gizlilik Politikası */
@@ -274,6 +287,7 @@ footer a:hover {
         width: 280px;
         padding: 16px 32px;
         font-size: 1rem;
+        min-width: auto;
     }
     
     .container {
