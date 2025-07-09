@@ -3,139 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destek - Support</title>
+    <title>Destek - Benim Ülke</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        
-        .container {
+        /* Support sayfasına özel stiller */
+        .support-content {
             background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 4rem 0;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
-        h1 {
-            color: #2c3e50;
+        .support-content h2 {
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 600;
             text-align: center;
-            margin-bottom: 30px;
-            font-weight: 300;
         }
         
         .support-section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #007AFF;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #fafafa;
+            border-radius: 12px;
+            border-left: 4px solid #1a1a1a;
+        }
+        
+        .support-section h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .support-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: #666;
         }
         
         .contact-info {
             text-align: center;
-            background: #e3f2fd;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            border: 2px solid #1a1a1a;
         }
         
         .email {
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 600;
-            color: #007AFF;
+            color: #1a1a1a;
             text-decoration: none;
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #1a1a1a;
+            transition: all 0.3s ease;
         }
         
         .email:hover {
-            text-decoration: underline;
+            background: #1a1a1a;
+            color: white;
+            transform: translateY(-2px);
         }
         
         .response-time {
             color: #666;
-            font-size: 0.9em;
-            margin-top: 10px;
+            font-size: 1rem;
+            margin-top: 1rem;
         }
         
         .faq-item {
-            margin-bottom: 20px;
-            padding: 15px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
             background: white;
-            border-radius: 6px;
-            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         .faq-question {
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 8px;
+            color: #1a1a1a;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
         }
         
         .faq-answer {
-            color: #555;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .support-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .support-section li {
+            margin-bottom: 0.8rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .support-content {
+                max-width: 100%;
+                padding: 2rem 0;
+            }
+            
+            .support-content h2 {
+                font-size: 2rem;
+            }
+            
+            .support-section {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .contact-info {
+                padding: 2rem 1rem;
+                margin: 2rem 0;
+            }
+            
+            .email {
+                font-size: 1.1rem;
+                padding: 0.7rem 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>📧 Destek & İletişim</h1>
-        
-        <div class="support-section">
-            <h2>🤝 Size Nasıl Yardımcı Olabiliriz?</h2>
-            <p>Herhangi bir sorunuz, öneriniz veya teknik destek ihtiyacınız için bizimle iletişime geçmekten çekinmeyin.</p>
+    <header>
+        <div class="container">
+            <h1>🇹🇷 Benim Ülke</h1>
+            <p class="subtitle">Destek & İletişim</p>
         </div>
+    </header>
 
-        <div class="contact-info">
-            <h3>📮 İletişim</h3>
-            <a href="mailto:tfyilmaz@gmail.com" class="email">tfyilmaz@gmail.com</a>
-            <div class="response-time">
-                ⏱️ Genellikle 24 saat içinde yanıtlıyoruz
+    <main>
+        <div class="support-content">
+            <div class="container">
+                <h2>📧 Size Nasıl Yardımcı Olabiliriz?</h2>
+                
+                <div class="contact-info">
+                    <h3>📮 İletişim</h3>
+                    <a href="mailto:tfyilmaz@gmail.com" class="email">tfyilmaz@gmail.com</a>
+                    <div class="response-time">
+                        ⏱️ Genellikle 24 saat içinde yanıtlıyoruz
+                    </div>
+                </div>
+
+                <div class="support-section">
+                    <h3>📋 Sık Sorulan Sorular</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Hesabımı nasıl silebilirim?</div>
+                        <div class="faq-answer">Hesap silme işlemi için yukarıdaki mail adresinden bizimle iletişime geçin. Talebinizi en kısa sürede işleme alacağız.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Verilerim güvende mi?</div>
+                        <div class="faq-answer">Kişisel verilerinizin korunması bizim için önceliktir. KVKK ve GDPR standartlarına uygun hareket ediyoruz.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Uygulama çalışmıyor, ne yapmalıyım?</div>
+                        <div class="faq-answer">Önce uygulamayı kapatıp yeniden açmayı deneyin. Sorun devam ederse cihazınızı yeniden başlatın. Hala çözülmezse bize yazın.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Geri bildirimimi nasıl iletebilirim?</div>
+                        <div class="faq-answer">Önerilerinizi ve geri bildirimlerinizi yukarıdaki mail adresine gönderebilirsiniz. Her geri bildirim bizim için değerlidir.</div>
+                    </div>
+                </div>
+
+                <div class="support-section">
+                    <h3>🔧 Teknik Destek</h3>
+                    <p>Mail gönderirken lütfen şunları belirtin:</p>
+                    <ul>
+                        <li>Cihaz modeli ve işletim sistemi versiyonu</li>
+                        <li>Uygulama versiyonu</li>
+                        <li>Karşılaştığınız sorunun detaylı açıklaması</li>
+                        <li>Hata ekran görüntüleri (varsa)</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </main>
 
-        <div class="support-section">
-            <h3>📋 Sık Sorulan Sorular</h3>
-            
-            <div class="faq-item">
-                <div class="faq-question">Hesabımı nasıl silebilirim?</div>
-                <div class="faq-answer">Hesap silme işlemi için yukarıdaki mail adresinden bizimle iletişime geçin. Talebinizi en kısa sürede işleme alacağız.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Verilerim güvende mi?</div>
-                <div class="faq-answer">Kişisel verilerinizin korunması bizim için önceliktir. KVKK ve GDPR standartlarına uygun hareket ediyoruz.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Uygulama çalışmıyor, ne yapmalıyım?</div>
-                <div class="faq-answer">Önce uygulamayı kapatıp yeniden açmayı deneyin. Sorun devam ederse cihazınızı yeniden başlatın. Hala çözülmezse bize yazın.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Geri bildirimimi nasıl iletebilirim?</div>
-                <div class="faq-answer">Önerilerinizi ve geri bildirimlerinizi yukarıdaki mail adresine gönderebilirsiniz. Her geri bildirim bizim için değerlidir.</div>
-            </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Benim Ülke. Tüm hakları saklıdır.</p>
+            <p><a href="privacy.html">Gizlilik Politikası</a> | <a href="terms.html">Kullanım Şartları</a> | <a href="support.html">Destek</a></p>
         </div>
-
-        <div class="support-section">
-            <h3>🔧 Teknik Destek</h3>
-            <p>Mail gönderirken lütfen şunları belirtin:</p>
-            <ul>
-                <li>Cihaz modeli ve işletim sistemi versiyonu</li>
-                <li>Uygulama versiyonu</li>
-                <li>Karşılaştığınız sorunun detaylı açıklaması</li>
-                <li>Hata ekran görüntüleri (varsa)</li>
-            </ul>
-        </div>
-
-        <div style="text-align: center; margin-top: 40px; color: #666; font-size: 0.9em;">
-            <p>Bu sayfa Apple App Store gereksinimleri doğrultusunda oluşturulmuştur.</p>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
